@@ -21,6 +21,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+
 h1,
 h2 {
     color: var(--Dark-blue);
@@ -71,10 +72,23 @@ a:hover {
 
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (min-width: 1440px) {
+   .container {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+   }
+    
 }
 
 .card-wrap {
